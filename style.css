@@ -1,0 +1,231 @@
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css); */
+
+@font-face {
+    font-family: 'MexicanTequilaFont';
+    src: url(fonts/MexicanTequila-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'MilhoMexicano';
+    src: url(fonts/MilhoMexicano.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.navbar{
+    /*changing the position of the nav bar*/
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 100px 0;
+  top: 0;
+  z-index: 100;
+  line-height: 20px;
+  padding-left: 9px;
+}
+.inner-width{
+    /*expands space between elote man and nav bar */
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  position: relative;
+  left: -50px; /* adjust this value to move the heading left or right */
+}
+
+.logo {
+  font-size: 65px;
+  font-weight: 100;
+  font-family: 'MexicanTequilaFont',sans-serif;
+  color: #25530afb;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'MilhoMexicano',sans-serif;
+  color: #aa1818;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 75px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+    /*not sure what this does */
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #ecdd52;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+#home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ff8800;
+  background-color: #ffd30d;
+  padding: 0 250px;
+}
+.content1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+}
+.title h{
+  margin-top: 25px;
+  margin-left: 2px;
+  text-align: right; /* add this line to center-align the text */
+}
+.title h1{
+  /*take your tastebuds...... */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px; 
+  margin-left: 2px;
+  text-align: center;
+}
+.title h2{
+  /*on a journey...... */
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+  text-align: center;
+}
+
+.image{
+  background-image: url(bitmoji.png);
+  background-position: center;
+  background-size: cover;
+  width: 470px;
+  height: 370px;
+  margin-left: -50px;
+}
+.content2{
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+  padding-left: 280px;
+}
+.content2 .image{
+  background-image: url(elotero2.PNG);
+  width: 570px;
+  height: 470px;
+  margin-left: 35px;
+}
+.title p{
+  margin-top: 10px;
+  margin-left: 90px; /* adjust this value to move the text a bit more to the right */
+  text-align: center; /* add this line to center-align the text */
+}
+.title p{
+  /*unofficial website for my Tio Manuel the 'Elote Man'*/
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.content2 button{
+  padding: 14px 27px;
+  margin-top: 10px;
+  margin-left: 250px;
+  background-color: #c76547;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Raleway',sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+body {
+  
+  border: 10px solid #4db610fb;
+  background-color: #ffd30d;
+}
+#about {
+  background-color: #ffd30d;
+  padding: 100px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.inner-width a{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+.products {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  background-color: #ffd30d;
+}
+
+.product {
+  width: 22%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.product p {
+  font-size: 16px;
+  color: #888;
+}
+

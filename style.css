@@ -97,12 +97,12 @@
   margin-top: 40px;
 }
 .image2 {
-    background-image: url(review1.png);
+    background-image: url(review2.png);
     background-position: center bottom;
     background-size: cover;
-    width: 510px;
+    width: 555px;
     height: 25%;
-    margin-top: 30px; /* Add some space between the two images */
+    margin-top: 45px; /* Add some space between the two images */
   }
 .content2{
   display: flex;
@@ -185,21 +185,23 @@
   background-color: #de6900;
 }
 body {
-    border: 10px solid #25530afb;
-  }
+  border: 20px solid #25530afb;
+  background-color: #f8f2e7;
+  height: 105vh; /* Set height to full viewport height */
+}
   #about .content {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    background-color: #f8f2e7;
   }
   
   #about .image {
-    background-image: url('elotero4.PNG');
+    background-image: url('intro.PNG');
     background-size: cover;
-    width: 300px;
-    height: 300px;
+    width: 1000px;
+    height: 700px;
     display: inline-block;
-    border-radius: 50%;
-    margin-top: 100px;
+    margin-top: 90px;
   }
   
   #about p {
@@ -207,10 +209,59 @@ body {
     margin-top: 50px;
     font-size: 18px;
     line-height: 1.5;
+    background-color: #f8f2e7;
   }
   .bio {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
     letter-spacing: 1px;
+    background-color: #f8f2e7;
+  }
+
+
+  
+
+
+  #snacks .content {
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f8f2e7;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .snacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .snacks-item {
+    display: inline-block;
+    width: 200px;
+    margin: 100px;
+    text-align: center;
+  }
+  
+  .snacks-item img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px; /* Change this to your preferred height */
+  }
+  
+  .snacks-item-info {
+    margin-top: 10px;
+  }
+  
+  .snacks-item-price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .snacks-item-desc {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
   }
